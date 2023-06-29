@@ -13,7 +13,7 @@ def gettoken():
         # 判断存放token的目录是否存在，不存在就创建
         token_json_dir = sep([getprojectpath(), "token_dir"])
         if not os.path.exists(token_json_dir):
-            print("目录不存在，创建中")
+            print("目录不存在，创建中...")
             os.mkdir(token_json_dir)
 
         token_json_path = sep([token_json_dir, user + "_token.json"])
